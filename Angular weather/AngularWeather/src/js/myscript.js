@@ -6,7 +6,7 @@ var rowID;
 // Load data from JSON and save to Local Storage
 $(document).ready(function () {
 
-    $.getJSON("../dataFiles/cities.json", function (data) {
+    $.getJSON("dataFiles/cities.json", function (data) {
         console.log(data);
 
 

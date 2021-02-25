@@ -3,6 +3,8 @@ var latArray = new Array();
 var lngArray = new Array();
 var rowID;
 
+// import data from '../dataFiles/cities.json'
+
 // Load data from JSON and save to Local Storage
 $(document).ready(function () {
 

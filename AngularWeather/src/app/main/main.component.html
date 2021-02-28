@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- <link href="../css/mystyles.css" /> -->
-  <script src="../js/jquery.js"></script>
-  <script src="../js/myscript.js"></script>
+  <!-- <!-- <script src="../js/jquery.js"></script> -->
+  <!-- <script src="../dataFiles/cities.json"></script> -->
 </head>
 
 <body>
@@ -14,6 +14,10 @@
       <h2>Select a city to show current weather...</h2>
     </header>
     <section id="content">
+      <script>
+        import data from "../dataFiles/cities.json";
+        console.log(data);
+      </script>
       <ul id="cityList"></ul>
     </section>
   </div>

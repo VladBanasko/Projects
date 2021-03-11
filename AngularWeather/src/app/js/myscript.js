@@ -9,7 +9,7 @@ var rowID;
 $(document).ready(function () {
 
     $.getJSON("../dataFiles/cities.json", function (data) {
-        // console.log(data);
+        console.log(data);
         // console.log("inside ready function")
 
 

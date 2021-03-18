@@ -19,7 +19,7 @@ $(document).ready(function () {
     // Get API key from https://home.openweathermap.org/
 
     // Build api string
-    // var apiURI = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=484e47e5a69dfcd6d1d089e84051d0d5`;
+    var apiURI = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=484e47e5a69dfcd6d1d089e84051d0d5`;
 
     // Get JSON data from remote server and display data
 

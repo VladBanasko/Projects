@@ -34,7 +34,7 @@ def status():
         'time3': now,
         'time4': str(now),
         'time5': now.isoformat(),
-        'time6': now.strftime('%Y/%m/%d %H:%M:%S сейчас на сервере'),
+        'time6': now.strftime('%Y/%m/%d %H:%M:%S time on server'),
     }
 
 

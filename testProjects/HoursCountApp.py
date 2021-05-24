@@ -7,9 +7,11 @@ def countHours():
 	totalHours = 0
 
 	startHours = input("input time start")
+	print("you entered " + startHours)
 	finishHours = input("input fours finish")
 
+	totalHours = finishHours - startHours
 
+	total = totalHours * pay
 
-
-	print("time added")
+	print("time added and for now sum is " + total)

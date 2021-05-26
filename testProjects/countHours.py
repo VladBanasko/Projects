@@ -12,7 +12,7 @@ totalhours = 0
 #finishHours = int(input("input time finish: "))
 #print("you entered " + str(finishHours))
 
-#starttime =
+
 #starttime = str(input('Enter start time(yyyy-mm-dd hh:mm): '))
 
 #start = datetime.strptime(starttime, "%Y-%m-%d %H:%M")
@@ -25,9 +25,9 @@ starttime = str(input('Enter start time( hh:mm): '))
 
 start = datetime.strptime(starttime, "%H:%M")
 
-finishtime = str(input('Enter finish time(yyyy-mm-dd hh:mm): '))
+finishtime = str(input('Enter finish time( hh:mm): '))
 
-finish = datetime.strptime(finishtime, "%Y-%m-%d %H:%M")
+finish = datetime.strptime(finishtime, "%H:%M")
 
 timedifference = finish - start
 

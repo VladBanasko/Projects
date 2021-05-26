@@ -36,7 +36,9 @@ print(timedifference)
 #totalhours = finishHours - startHours
 
 #total = totalhours * pay
-total = float(timedifference) * pay
+total = timedifference * pay
+
+print(total)
 
 print("time added and for now sum is " + str(total))
 

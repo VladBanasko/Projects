@@ -3,7 +3,10 @@
 #def counthours():
 
 from datetime import datetime
+#pay per hour
 pay = 22
+#pay per minute
+pay2 = 0.36
 
 totalhours = 0
 

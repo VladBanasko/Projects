@@ -6,7 +6,7 @@ from datetime import datetime
 #pay per hour
 pay = 22
 #pay per minute
-pay2 = 0.36
+pay2 = pay /60
 
 totalhours = 0
 

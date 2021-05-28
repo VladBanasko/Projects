@@ -32,8 +32,9 @@ finishtime = str(input('Enter finish time( hh:mm): '))
 
 finish = datetime.strptime(finishtime, "%H:%M")
 
+# total hours worked
 timedifference = finish - start
-
+#total minutes worked
 timedifference1 = int(timedifference.total_seconds() / 60)
 
 print(timedifference)
@@ -41,6 +42,7 @@ print(timedifference)
 #totalhours = finishHours - startHours
 
 #total = totalhours * pay
+# total sum of payed minutes
 total = timedifference1 * pay2
 
 print(total)

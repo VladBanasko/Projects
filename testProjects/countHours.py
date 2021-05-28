@@ -34,12 +34,14 @@ finish = datetime.strptime(finishtime, "%H:%M")
 
 timedifference = finish - start
 
+timedifference1 = int(timedifference.total_seconds() / 60)
+
 print(timedifference)
 
 #totalhours = finishHours - startHours
 
 #total = totalhours * pay
-total = timedifference * pay
+total = timedifference1 * pay2
 
 print(total)
 

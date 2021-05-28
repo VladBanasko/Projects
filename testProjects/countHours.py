@@ -42,6 +42,7 @@ print(timedifference)
 #totalhours = finishHours - startHours
 
 #total = totalhours * pay
+
 # total sum of payed minutes
 total = timedifference1 * pay2
 

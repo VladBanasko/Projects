@@ -46,7 +46,6 @@ print(timedifference)
 # total sum of payed minutes
 total = timedifference1 * pay2
 
-print(total)
 
 print("time added and for now sum is " + str(total))
 

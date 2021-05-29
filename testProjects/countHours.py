@@ -8,6 +8,8 @@ pay = 22
 #pay per minute
 pay2 = pay / 60
 
+pay3 = float(format(pay2,".2f"))
+
 totalhours = 0
 
 #startHours = int(input("input time start: "))
@@ -42,6 +44,7 @@ while (starttime != 'end'):
 #total minutes worked
     timedifference1 = int(timedifference.total_seconds() / 60)
 
+
     print(timedifference)
 
 #totalhours = finishHours - startHours
@@ -49,8 +52,12 @@ while (starttime != 'end'):
 #total = totalhours * pay
 
 # total sum of payed minutes
-    total = timedifference1 * pay2
+    total = timedifference1 * pay3
+
+    
 
 
-    print("time added and for now sum is " + str(total))
+
+    print("time added and for now sum is total " + str(total))
+    print("time added and for now sum is total1 " + str(total1))
 

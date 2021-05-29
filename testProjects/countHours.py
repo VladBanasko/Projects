@@ -6,7 +6,7 @@ from datetime import datetime
 #pay per hour
 pay = 22
 #pay per minute
-pay2 = pay /60
+pay2 = pay / 60
 
 totalhours = 0
 
@@ -24,28 +24,33 @@ totalhours = 0
 
 #finish = datetime.strptime(finishtime, "%Y-%m-%d %H:%M")
 
-starttime = str(input('Enter start time( hh:mm): '))
 
-start = datetime.strptime(starttime, "%H:%M")
 
-finishtime = str(input('Enter finish time( hh:mm): '))
+starttime = str(input('Enter start time( hh:mm): , or type end to end program :'))
 
-finish = datetime.strptime(finishtime, "%H:%M")
+while (starttime != 'end'):
+
+
+    start = datetime.strptime(starttime, "%H:%M")
+
+    finishtime = str(input('Enter finish time( hh:mm): '))
+
+    finish = datetime.strptime(finishtime, "%H:%M")
 
 # total hours worked
-timedifference = finish - start
+    timedifference = finish - start
 #total minutes worked
-timedifference1 = int(timedifference.total_seconds() / 60)
+    timedifference1 = int(timedifference.total_seconds() / 60)
 
-print(timedifference)
+    print(timedifference)
 
 #totalhours = finishHours - startHours
 
 #total = totalhours * pay
 
 # total sum of payed minutes
-total = timedifference1 * pay2
+    total = timedifference1 * pay2
 
 
-print("time added and for now sum is " + str(total))
+    print("time added and for now sum is " + str(total))
 

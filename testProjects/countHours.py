@@ -26,8 +26,6 @@ totalhours = 0
 
 #finish = datetime.strptime(finishtime, "%Y-%m-%d %H:%M")
 
-
-
 starttime = str(input('Enter start time( hh:mm): , or type end to end program :'))
 
 while (starttime != 'end'):
@@ -44,7 +42,6 @@ while (starttime != 'end'):
 #total minutes worked
     timedifference1 = int(timedifference.total_seconds() / 60)
 
-
     print(timedifference)
 
 #totalhours = finishHours - startHours
@@ -53,10 +50,6 @@ while (starttime != 'end'):
 
 # total sum of payed minutes
     total = timedifference1 * pay3
-
-    
-
-
 
     print("time added and for now sum is total " + str(total))
     print("time added and for now sum is total1 " + str(total1))

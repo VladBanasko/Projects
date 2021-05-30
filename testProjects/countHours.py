@@ -1,10 +1,10 @@
+
 # application that take start time and finish time of shift from user(test version
 # of app to implement it's logic on swift later)
 # def counthours():
 
-
-import numpy as np
 from datetime import datetime
+
 
 
 # pay per hour
@@ -12,11 +12,10 @@ pay = 22
 # pay per minute
 pay2 = pay / 60
 
-
 pay3 = float(round(pay2,2))
-pay4 = float()
 
 print(pay3)
+
 totalhours = 0
 
 # startHours = int(input("input time start: "))
@@ -58,4 +57,4 @@ while (starttime != 'end'):
     total = timedifference1 * pay3
 
     print("time added and for now sum is total " + str(total))
-# print("time added and for now sum is total1 " + str(total1))
+

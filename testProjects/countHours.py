@@ -16,7 +16,7 @@ pay3 = float(round(pay2,2))
 
 print(pay3)
 
-totalhours = 0
+totalminutes = 0
 
 # startHours = int(input("input time start: "))
 # print("you entered " + str(startHours))
@@ -32,29 +32,37 @@ totalhours = 0
 
 # finish = datetime.strptime(finishtime, "%Y-%m-%d %H:%M")
 
-starttime = str(input('Enter start time or type end to end program :'))
+starttime = ''
 
-while (starttime != 'end'):
+while starttime != 'end':
+    #try:
+    
+
     starttime = str(input('Enter start time( hh:mm): , or type end to end program :'))
+
     start = datetime.strptime(starttime, "%H:%M")
 
     finishtime = str(input('Enter finish time( hh:mm): '))
 
     finish = datetime.strptime(finishtime, "%H:%M")
 
-    # total hours worked
+
+        # total hours worked
     timedifference = finish - start
     # total minutes worked
     timedifference1 = int(timedifference.total_seconds() / 60)
 
     print(timedifference)
+    print(timedifference1)
 
-    # totalhours = finishHours - startHours
+        # totalhours = finishHours - startHours
 
-    # total = totalhours * pay
+        # total = totalhours * pay
 
-    # total sum of payed minutes
+        # total sum of payed minutes
     total = timedifference1 * pay3
 
     print("time added and for now sum is total " + str(total))
+    #except:
+    print("Sorry, invalid input")
 

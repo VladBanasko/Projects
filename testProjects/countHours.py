@@ -5,8 +5,6 @@
 
 from datetime import datetime
 
-
-
 # pay per hour
 pay = 22
 # pay per minute
@@ -35,8 +33,6 @@ totalminutes = 0
 starttime = ''
 
 while starttime != 'end':
-    #try:
-    
 
     starttime = str(input('Enter start time( hh:mm): , or type end to end program :'))
 
@@ -46,23 +42,20 @@ while starttime != 'end':
 
     finish = datetime.strptime(finishtime, "%H:%M")
 
-
+    #except:
+        #print("Error")
         # total hours worked
     timedifference = finish - start
-    # total minutes worked
+    #total minutes worked
     timedifference1 = int(timedifference.total_seconds() / 60)
 
     print(timedifference)
     print(timedifference1)
 
-        # totalhours = finishHours - startHours
-
-        # total = totalhours * pay
 
         # total sum of payed minutes
     total = timedifference1 * pay3
 
     print("time added and for now sum is total " + str(total))
-    #except:
-    print("Sorry, invalid input")
+
 

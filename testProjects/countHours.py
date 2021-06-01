@@ -30,23 +30,27 @@ totalminutes = 0
 
 # finish = datetime.strptime(finishtime, "%Y-%m-%d %H:%M")
 
-starttime = ''
+work = True
 
-while starttime != 'end':
+while work:
 
     starttime = str(input('Enter start time( hh:mm): , or type end to end program :'))
-
-    start = datetime.strptime(starttime, "%H:%M")
-
+    if starttime == 'end':
+        break
     finishtime = str(input('Enter finish time( hh:mm): '))
 
-    finish = datetime.strptime(finishtime, "%H:%M")
+    try:
+        start = datetime.strptime(starttime, "%H:%M")
+        finish = datetime.strptime(finishtime, "%H:%M")
+    #finishtime = str(input('Enter finish time( hh:mm): '))
 
-    #except:
-        #print("Error")
+    #finish = datetime.strptime(finishtime, "%H:%M")
+    except:
+        print("Error")
+
         # total hours worked
     timedifference = finish - start
-    #total minutes worked
+    # total minutes worked
     timedifference1 = int(timedifference.total_seconds() / 60)
 
     print(timedifference)

@@ -36,7 +36,7 @@ while work:
 
     starttime = str(input('Enter start time( hh:mm): , or type end to end program :'))
     if starttime == 'end':
-        break
+        work = False
     finishtime = str(input('Enter finish time( hh:mm): '))
 
     try:

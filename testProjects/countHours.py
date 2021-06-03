@@ -56,9 +56,8 @@ while work:
     print(timedifference)
     print(timedifference1)
 
-
-        # total sum of payed minutes
-    total = timedifference1 * pay3
+    # need to create formula to correctly calculate total sum
+    total = 
 
     print("time added and for now sum is total " + str(total))
 

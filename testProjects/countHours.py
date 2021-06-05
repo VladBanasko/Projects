@@ -1,4 +1,3 @@
-
 # application that take start time and finish time of shift from user(test version
 # of app to implement it's logic on swift later)
 # def counthours():
@@ -10,7 +9,7 @@ pay = 22
 # pay per minute
 pay2 = pay / 60
 
-pay3 = float(round(pay2,2))
+pay3 = float(round(pay2, 2))
 
 print(pay3)
 
@@ -42,9 +41,9 @@ while work:
     try:
         start = datetime.strptime(starttime, "%H:%M")
         finish = datetime.strptime(finishtime, "%H:%M")
-    #finishtime = str(input('Enter finish time( hh:mm): '))
+    # finishtime = str(input('Enter finish time( hh:mm): '))
 
-    #finish = datetime.strptime(finishtime, "%H:%M")
+    # finish = datetime.strptime(finishtime, "%H:%M")
     except:
         print("Error")
 
@@ -57,8 +56,6 @@ while work:
     print(timedifference1)
 
     # need to create formula to correctly calculate total sum
-    total = 
+    # total =
 
     print("time added and for now sum is total " + str(total))
-
-

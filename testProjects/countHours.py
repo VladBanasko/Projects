@@ -56,6 +56,6 @@ while work:
     print(timedifference1)
 
     # need to create formula to correctly calculate total sum
-    # total =
+    # total = 22 * hours
 
     print("time added and for now sum is total " + str(total))

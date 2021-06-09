@@ -56,6 +56,7 @@ while work:
     print(timedifference1)
 
     # need to create formula to correctly calculate total sum
-    # total = 22 * hours
+    # total = 22 * hours ( devide total time by 60 , then muliply whole number of hours by 22
+    # rest of time , minutes left from working time multiply by paymnet per minute
 
     print("time added and for now sum is total " + str(total))

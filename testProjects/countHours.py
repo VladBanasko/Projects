@@ -59,7 +59,9 @@ while work:
     # total = 22 * hours ( devide total time by 60 , then muliply whole number of hours by 22
     # rest of time , minutes left from working time multiply by paymnet per minute
 
-    wotkinghours = timedifference  / 60 # whole number of hours
-    minutesworkedleft =   # minutes left from working hours
+    wotkinghours = int(timedifference  / 60) # whole number of hours
+    print(wotkinghours)
+    minutesworkedleft =   timedifference % 60 # minutes left from working hours
+
 
     print("time added and for now sum is total " + str(total))

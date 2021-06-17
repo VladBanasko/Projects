@@ -62,6 +62,7 @@ while work:
     wotkinghours = int(timedifference  / 60) # whole number of hours
     print(wotkinghours)
     minutesworkedleft =   timedifference % 60 # minutes left from working hours
+    print(minutesworkedleft)
 
 
     print("time added and for now sum is total " + str(total))

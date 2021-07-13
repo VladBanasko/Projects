@@ -61,7 +61,7 @@ while work:
 
     wotkinghours = int(timedifference  / 60)# whole number of hours
     print(wotkinghours)
-    minutesworkedleft =   timedifference % 60  # minutes left from working hours
+    minutesworkedleft =   timedifference % 60 asd # minutes left from working hours
     print(minutesworkedleft)
 
 

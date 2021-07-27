@@ -19,8 +19,6 @@ totalminutes = 0
 # print("you entered " + str(startHours))
 # finishHours = int(input("input time finish: "))
 # print("you entered " + str(finishHours))
-
-
 # starttime = str(input('Enter start time(yyyy-mm-dd hh:mm): '))
 
 # start = datetime.strptime(starttime, "%Y-%m-%d %H:%M")
@@ -61,7 +59,7 @@ while work:
 
     wotkinghours = int(timedifference  / 60)# whole number of hours
     print(wotkinghours)
-    minutesworkedleft =   timedifference % 60  # minutes left from working hours
+    minutesworkedleft =   timedifference % 60 # minutes left from working hours
     print(minutesworkedleft)
 
 

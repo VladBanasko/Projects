@@ -5,7 +5,7 @@
 from datetime import datetime
 
 # pay per hour
-pay = 22
+pay = 23
 # pay per minute
 pay2 = pay / 60
 
@@ -34,6 +34,7 @@ while work:
     starttime = str(input('Enter start time( hh:mm): , or type end to end program :'))
     if starttime == 'end':
         work = False
+        break
     finishtime = str(input('Enter finish time( hh:mm): '))
 
     try:

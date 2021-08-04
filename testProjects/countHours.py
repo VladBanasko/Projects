@@ -47,7 +47,7 @@ while work:
         print("Error")
 
         # total hours worked
-    timedifference = finish - start
+    timedifference = finish - starts
     # total minutes worked
     timedifference1 = int(timedifference.total_seconds() / 60)
 

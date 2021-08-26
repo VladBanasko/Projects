@@ -2,6 +2,7 @@
 # of app to implement it's logic on swift later)
 # def counthours():
 
+# count number of minutes to multiply later by pay
 from datetime import datetime
 
 # pay per hour

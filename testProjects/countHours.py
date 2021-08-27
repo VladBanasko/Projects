@@ -59,7 +59,7 @@ while work:
     # total = 22 * hours ( devide total time by 60 , then multiply whole number of hours by 22
     # rest of time , minutes left from working time multiply by payment per minute
 
-    wotkinghours = int(timedifference  / 60)# whole number of hours
+    wotkinghours = int(timedifference  / 60) asd# whole number of hours
     print(wotkinghours)
     minutesworkedleft =   timedifference % 60 # minutes left from working hours
     print(minutesworkedleft)

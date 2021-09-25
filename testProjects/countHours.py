@@ -8,7 +8,7 @@ from datetime import datetime
 # pay per hour
 pay = 23
 # pay per minute
-pay2 = pay / 60 asd
+pay2 = pay / 60 
 
 pay3 = float(round(pay2, 2))
 

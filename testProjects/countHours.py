@@ -8,7 +8,7 @@ from datetime import datetime
 # pay per hour
 pay = 23
 # pay per minute
-pay2 = pay / 60 asd
+pay2 = pay / 60 
 
 pay3 = float(round(pay2, 2))
 
@@ -48,7 +48,7 @@ while work:
         print("Error")
 
         # total hours worked
-    timedifference = finish - starts
+    timedifference = finish - starts asd
     # total minutes worked
     timedifference1 = int(timedifference.total_seconds() / 60)
 

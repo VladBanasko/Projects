@@ -10,7 +10,7 @@ pay = 23
 # pay per minute
 pay2 = pay / 60 
 
-pay3 = float(round(pay2, 2)) 
+pay3 = float(round(pay2, 2)) sd
 
 print(pay3)
 

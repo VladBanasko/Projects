@@ -40,7 +40,7 @@ while work:
 
     try:
         start = datetime.strptime(starttime, "%H:%M")
-        finish = datetime.strptime(finishtime, "%H:%M")
+        finish = datetime.strptime(finishtime, "%H:%M")asd
     # finishtime = str(input('Enter finish time( hh:mm): '))
 
     # finish = datetime.strptime(finishtime, "%H:%M")
@@ -62,7 +62,7 @@ while work:
     # wotkinghours = int(timedifference  / 60) # whole number of hours
     # print(wotkinghours)
     minutesworkedleft =   timedifference % 60 # minutes left from working hours
-    print(minutesworkedleft) 
+    print(minutesworkedleft)
 
 
     # print("time added and for now sum is total " + str(total))

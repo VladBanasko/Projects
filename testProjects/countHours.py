@@ -40,7 +40,7 @@ while work:
 
     try:
         start = datetime.strptime(starttime, "%H:%M")
-        finish = datetime.strptime(finishtime, "%H:%M") jhg
+        finish = datetime.strptime(finishtime, "%H:%M") as
     # finishtime = str(input('Enter finish time( hh:mm): '))
 
     # finish = datetime.strptime(finishtime, "%H:%M")

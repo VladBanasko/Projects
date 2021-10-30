@@ -10,7 +10,7 @@ pay = 23
 # pay per minute
 pay2 = pay / 60 
 
-pay3 = float(round(pay2, 2))
+pay3 = float(round(pay2, 2)) asd
 
 print(pay3)
 
@@ -40,7 +40,7 @@ while work:
 
     try:
         start = datetime.strptime(starttime, "%H:%M")
-        finish = datetime.strptime(finishtime, "%H:%M") as
+        finish = datetime.strptime(finishtime, "%H:%M")
     # finishtime = str(input('Enter finish time( hh:mm): '))
 
     # finish = datetime.strptime(finishtime, "%H:%M")

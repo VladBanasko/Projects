@@ -73,7 +73,7 @@ function mainScreen() {
         $("#provList").append(
             `
 	<li id='${x}'>
-	<a href="otherPages/provPage.html">${pList[x].name}</a>
+	<a href="../../assets/pages/provPage.html">${pList[x].name}</a>
 
 
 	 </li>

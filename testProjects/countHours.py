@@ -1,6 +1,6 @@
 # application that take start time and finish time of shift from user(test version
 # of app to implement it's logic on swift later)
-# def counthours():
+
 
 # count number of minutes to multiply later by pay
 from datetime import datetime
@@ -37,19 +37,20 @@ while work:
 
         # total time worked
         timedifference = finish - start
-    except:
-        print("Error")
-        
+
 
     # total minutes worked
-    timedifference1 = int(timedifference.total_seconds() / 60)
+        timedifference1 = int(timedifference.total_seconds() / 60)
 
-    print("timedifference in hours {} ".format(timedifference))
-    print("timediffernece in minutes is {}".format(timedifference1))
+        print("timedifference in hours {} ".format(timedifference))
+        print("timediffernece in minutes is {}".format(timedifference1))
 
-    totalPayHours = pay * timedifference
-    totalPayMinutes = float(round(pay2 * timedifference1, 2))
+        totalPayHours = pay * timedifference
+        totalPayMinutes = float(round(pay2 * timedifference1, 2))
 
     # print(" payment for total  hours is {}".format(totalPayHours))
-    print(" payment for total minutes is {}".format(totalPayMinutes))
+        print(" payment for total minutes is {}".format(totalPayMinutes))
+
+    except:
+        print("Error")
 

@@ -12,7 +12,8 @@ pay2 = pay / 60
 
 pay3 = float(round(pay2, 2)) 
 
-print(pay3)
+print(" pay per min is {}".format(pay2))
+print(" pay per min rounded is {}".format(pay3))
 
 totalminutes = 0
 
@@ -49,11 +50,18 @@ while work:
 
         # total hours worked
     timedifference = finish - start
+
     # total minutes worked
     timedifference1 = int(timedifference.total_seconds() / 60)
 
-    print(timedifference)
-    print(timedifference1)
+    print("timedifference in hours {} ".format(timedifference))
+    print("timediffernece in minutes is {}".format(timedifference1))
+
+    totalPayHours = pay * timedifference
+    totalPayMinutes = pay2 * timedifference1
+
+    print(" payment for total  hours is {}".format(totalPayHours))
+    print(" payment for total minutes is {}".format(totalPayMinutes))
 
     # need to create formula to correctly calculate total sum
     # total = 22 * hours ( devide total time by 60 , then multiply whole number of hours by 22
@@ -61,8 +69,8 @@ while work:
 
     # wotkinghours = int(timedifference  / 60) # whole number of hours
     # print(wotkinghours)
-    minutesworkedleft =   timedifference % 60 # minutes left from working hours
-    print(minutesworkedleft)
+    # minutesworkedleft =   timedifference % 60 # minutes left from working hours
+    # print(minutesworkedleft)
 
 
     # print("time added and for now sum is total " + str(total))

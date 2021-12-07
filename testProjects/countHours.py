@@ -17,17 +17,6 @@ print(" pay per min rounded is {}".format(pay3))
 
 totalminutes = 0
 
-# startHours = int(input("input time start: "))
-# print("you entered " + str(startHours))
-# finishHours = int(input("input time finish: "))
-# print("you entered " + str(finishHours))
-# starttime = str(input('Enter start time(yyyy-mm-dd hh:mm): '))
-
-# start = datetime.strptime(starttime, "%Y-%m-%d %H:%M")
-
-# finishtime = str(input('Enter finish time(yyyy-mm-dd hh:mm): '))
-
-# finish = datetime.strptime(finishtime, "%Y-%m-%d %H:%M")
 
 work = True
 
@@ -42,14 +31,15 @@ while work:
     try:
         start = datetime.strptime(starttime, "%H:%M")
         finish = datetime.strptime(finishtime, "%H:%M")
-    # finishtime = str(input('Enter finish time( hh:mm): '))
 
-    # finish = datetime.strptime(finishtime, "%H:%M")
+    # except:
+    #     print("Error")
+
+        # total time worked
+        timedifference = finish - start
     except:
         print("Error")
-
-        # total hours worked
-    timedifference = finish - start
+        
 
     # total minutes worked
     timedifference1 = int(timedifference.total_seconds() / 60)
@@ -58,19 +48,8 @@ while work:
     print("timediffernece in minutes is {}".format(timedifference1))
 
     totalPayHours = pay * timedifference
-    totalPayMinutes = pay2 * timedifference1
+    totalPayMinutes = float(round(pay2 * timedifference1, 2))
 
-    print(" payment for total  hours is {}".format(totalPayHours))
+    # print(" payment for total  hours is {}".format(totalPayHours))
     print(" payment for total minutes is {}".format(totalPayMinutes))
 
-    # need to create formula to correctly calculate total sum
-    # total = 22 * hours ( devide total time by 60 , then multiply whole number of hours by 22
-    # rest of time , minutes left from working time multiply by payment per minute
-
-    # wotkinghours = int(timedifference  / 60) # whole number of hours
-    # print(wotkinghours)
-    # minutesworkedleft =   timedifference % 60 # minutes left from working hours
-    # print(minutesworkedleft)
-
-
-    # print("time added and for now sum is total " + str(total))
